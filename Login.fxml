@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.Login">
+    <center>
+        <AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #96A885;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="386.0" layoutY="227.0" text="LOGIN PAGE">
+                    <font>
+                        <Font name="System Bold" size="38.0" />
+                    </font>
+                </Label>
+                <Label fx:id="wrongLogin" layoutX="286.0" layoutY="166.0" textFill="RED" />
+                <Label layoutX="371.0" layoutY="345.0" text="USERNAME" />
+                <Label layoutX="370.0" layoutY="382.0" text="PASSWORD" />
+                <Button fx:id="login" layoutX="473.0" layoutY="448.0" mnemonicParsing="false" onAction="#userLogin" style="-fx-background-color: white;" text="LOG IN" />
+                <TextField fx:id="username" layoutX="482.0" layoutY="341.0" promptText="Username" />
+                <PasswordField fx:id="password" layoutX="482.0" layoutY="378.0" promptText="Password" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

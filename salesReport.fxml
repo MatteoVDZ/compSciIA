@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #96A885;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.SalesReport">
+    <top>
+    <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #154734;" BorderPane.alignment="CENTER">
+        <children>
+            <Label layoutX="348.0" layoutY="14.0" text="CLOTHES DATABASE SYSTEM" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+                <opaqueInsets>
+                    <Insets bottom="10.0" top="10.0" />
+                </opaqueInsets>
+            </Label>
+        </children>
+    </AnchorPane>
+    </top>
+   <left>
+      <AnchorPane prefHeight="640.0" prefWidth="448.0" BorderPane.alignment="CENTER">
+         <children>
+             <Button fx:id="backToCustomers" layoutX="33.0" layoutY="557.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#backToCustomers" style="-fx-background-color: white;" text="Back" />
+            <PieChart fx:id="pieChart" animated="false" focusTraversable="true" labelLineLength="40.0" layoutX="67.0" layoutY="109.0" legendVisible="false" prefHeight="422.0" prefWidth="355.0" title="Sales By Item" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="95.0" layoutY="105.0" text="SALES REPORT FOR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" top="10.0" />
+               </opaqueInsets>
+            </Label>
+            <ChoiceBox fx:id="monthChoiceBox" layoutX="321.0" layoutY="106.0" prefHeight="29.0" prefWidth="130.0" style="-fx-background-color: white;" value="SELECT MONTH">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="January" />
+                        <String fx:value="February" />
+                        <String fx:value="March" />
+                        <String fx:value="April" />
+                        <String fx:value="May" />
+                        <String fx:value="June" />
+                        <String fx:value="July" />
+                        <String fx:value="August" />
+                        <String fx:value="September" />
+                        <String fx:value="October" />
+                        <String fx:value="November" />
+                        <String fx:value="December" />
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+            <TextField fx:id="txtTotalSales" layoutX="219.0" layoutY="167.0" prefHeight="32.0" prefWidth="178.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="94.0" layoutY="171.0" text="Total Sales">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="2.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtTotalUnits" layoutX="219.0" layoutY="217.0" prefHeight="32.0" prefWidth="149.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="94.0" layoutY="221.0" text="Total Units Sold">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="2.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtAveragePrice" layoutX="219.0" layoutY="317.0" prefHeight="32.0" prefWidth="149.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="94.0" layoutY="321.0" text="Average Price">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="2.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtAverageQuantity" layoutX="219.0" layoutY="367.0" prefHeight="32.0" prefWidth="149.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="94.0" layoutY="371.0" text="Average Quantity">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="2.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <Label layoutX="94.0" layoutY="417.0" prefHeight="46.0" prefWidth="108.0" text="Destination Countries" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="2.0" right="5.0" />
+               </padding>
+            </Label>
+            <TextArea fx:id="areaCountries" layoutX="219.0" layoutY="417.0" prefHeight="119.0" prefWidth="240.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+            <TextField fx:id="txtTotalPrice" layoutX="219.0" layoutY="267.0" prefHeight="32.0" prefWidth="149.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="94.0" layoutY="271.0" text="Total Price">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="2.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

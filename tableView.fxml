@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #96A885;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.TableView">
+    <top>
+        <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #154734;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="348.0" layoutY="14.0" text="CLOTHES DATABASE SYSTEM" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets bottom="10.0" top="10.0" />
+                    </opaqueInsets>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="526.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView layoutX="112.0" layoutY="40.0" prefHeight="559.0" prefWidth="547.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+        </AnchorPane>
+    </center>
+    <left>
+        <AnchorPane prefHeight="437.0" prefWidth="115.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="backToCustomers" layoutX="33.0" layoutY="557.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#backToCustomers" style="-fx-background-color: white;" text="Back" />
+            </children></AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="437.0" prefWidth="112.0" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>

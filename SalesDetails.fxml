@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #96A885;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.SalesDetails">
+    <top>
+        <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #154734;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="348.0" layoutY="14.0" text="CLOTHES DATABASE SYSTEM" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets bottom="10.0" top="10.0" />
+                    </opaqueInsets>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="526.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="172.0" layoutY="83.0" text="Sale ID:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtSaleID" layoutX="291.0" layoutY="78.0" prefHeight="29.0" prefWidth="310.0">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="171.0" layoutY="133.0" text="Customer ID:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="172.0" layoutY="233.0" text="Price:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="172.0" layoutY="283.0" text="Quantity Sold:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="172.0" layoutY="342.0" text="Destination:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="172.0" layoutY="420.0" text="Date of Sale:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtCustomerID" layoutX="291.0" layoutY="128.0" prefHeight="29.0" prefWidth="310.0">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtPrice" layoutX="291.0" layoutY="228.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. 12.99">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtQuantity" layoutX="291.0" layoutY="278.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. 8">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtDateOfSale" layoutX="291.0" layoutY="465.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. 14:15:00">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="172.0" layoutY="470.0" text="Time of Sale:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtTimeOfSale" layoutX="291.0" layoutY="415.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. 2023-06-08">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+            <Label layoutX="172.0" layoutY="183.0" text="Customer Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCustomerName" layoutX="291.0" layoutY="178.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. James Heart">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="txtDestination" layoutX="291.0" layoutY="328.0" prefHeight="67.0" prefWidth="310.0" promptText="eg. Address, Postal Code, City, State, Country" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </TextArea>
+            </children>
+        </AnchorPane>
+    </center>
+    <left>
+        <AnchorPane prefHeight="437.0" prefWidth="115.0" BorderPane.alignment="CENTER">
+         <children>
+                <Button fx:id="backToSales" layoutX="33.0" layoutY="557.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Back" />
+            <Button fx:id="btnPrevious" layoutX="33.0" layoutY="487.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#previous" style="-fx-background-color: white;" text="&lt;" />
+         </children></AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="437.0" prefWidth="112.0" BorderPane.alignment="CENTER">
+         <children>
+                <Button fx:id="btnNew" layoutX="31.0" layoutY="557.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#insert" style="-fx-background-color: white;" text="New" />
+            <Button fx:id="btnNext" layoutX="31.0" layoutY="487.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#next" style="-fx-background-color: white;" text="&gt;" />
+         </children></AnchorPane>
+    </right>
+</BorderPane>

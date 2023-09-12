@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #96A885;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.CustomerDetails">
+   <top>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #154734;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="348.0" layoutY="14.0" text="CLOTHES DATABASE SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" top="10.0" />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="526.0" prefWidth="673.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtCustomerName" layoutX="270.0" layoutY="78.0" prefHeight="76.0" prefWidth="429.0" promptText="eg. George Boyle" style="-fx-background-color: white;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="270.0" layoutY="187.0" text="Customer ID:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCustomerID" layoutX="389.0" layoutY="182.0" prefHeight="29.0" prefWidth="310.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="270.0" layoutY="227.0" text="Address:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="270.0" layoutY="267.0" text="Postal Code:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="270.0" layoutY="307.0" text="City:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="270.0" layoutY="347.0" text="Country:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="270.0" layoutY="387.0" text="Phone Number:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="270.0" layoutY="427.0" text="Email Address:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddress" layoutX="389.0" layoutY="222.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. 312 Elm Street">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPostalCode" layoutX="389.0" layoutY="262.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. 00153">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCity" layoutX="389.0" layoutY="302.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. San Francisco">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCountry" layoutX="389.0" layoutY="342.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. USA">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPhoneNumber" layoutX="389.0" layoutY="382.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. 666-888-0000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEmailAddress" layoutX="389.0" layoutY="422.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. john.boyle@example.com">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPaymentMethod" layoutX="389.0" layoutY="462.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. Credit Card">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="270.0" layoutY="467.0" text="Payment Method:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="163.0" layoutX="74.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/matte/IdeaProjects/fxmlCalculatorNewNew/src/img/blank-profile-picture-973460_1280-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtNumberOfPurchases" layoutX="389.0" layoutY="502.0" prefHeight="29.0" prefWidth="310.0" promptText="eg. 3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="270.0" layoutY="507.0" text="Purchases:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="seePurchases" layoutX="607.0" layoutY="580.0" mnemonicParsing="false" onAction="#showTableView" style="-fx-background-color: white;" text="See Purchases" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="437.0" prefWidth="115.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backToCustomers" layoutX="33.0" layoutY="557.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#backToCustomers" style="-fx-background-color: white;" text="Back" />
+            <Button fx:id="btnPrevious" layoutX="33.0" layoutY="487.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#previous" style="-fx-background-color: white;" text="&lt;" />
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="437.0" prefWidth="112.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnNew" layoutX="31.0" layoutY="557.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#insert" style="-fx-background-color: white;" text="New" />
+            <Button fx:id="btnNext" layoutX="31.0" layoutY="487.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#next" style="-fx-background-color: white;" text="&gt;" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>
